@@ -9,6 +9,7 @@ import { Message } from '@fe/api-interfaces';
 })
 export class AppComponent {
   name = 'ian';
+  test = 'test';
   hello$ = this.http.get<Message>('/api/hello');
   constructor(private http: HttpClient) {}
 }
